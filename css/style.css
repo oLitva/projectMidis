@@ -231,7 +231,18 @@ ul{
         display: none;
     }
 }
+@media (max-width:1130px) {
+    .slider__item{
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        background:none;
 
+    }
+    .button{
+        position: relative;
+    }
+}
 @media (max-width:1028px) {
     .catalog__card{
         margin-top: 10px;
