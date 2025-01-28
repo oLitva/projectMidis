@@ -225,6 +225,27 @@ ul{
     font-size: 42px;
     color: #d84033;
 }
+.slider__button{
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+}
+.slider__button:hover path{
+    transition: 0.5s;
+}
+.slider__button:hover path{
+    stroke: #b1977e;
+}
+.slider__button--prev{
+    left: -100px;
+}
+.slider__button--next{
+    right: -100px;   
+}
+
+/*======================================*/
+
 
 @media print{
     h2{
@@ -232,16 +253,25 @@ ul{
     }
 }
 @media (max-width:1130px) {
+    .button{
+        margin-right: auto;
+        margin-left: auto;
+    }
     .slider__item{
+        padding-top: 66px;
+        min-height: 164px;
         flex-direction: column;
         justify-content: start;
         text-align: center;
         background:none;
+    }
+  
+    .slider__item-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-    }
-    .button{
-        position: relative;
-    }
 }
 @media (max-width:1028px) {
     .catalog__card{
